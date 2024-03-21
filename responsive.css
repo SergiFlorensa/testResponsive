@@ -1,0 +1,513 @@
+@media only screen and (max-width: 400px) {
+  header {
+    background-color:transparent;
+    width: 100%;
+    height: 15vh;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 0;
+    flex-direction: row;
+    position: absolute;
+    z-index: 1;
+
+  }
+
+  .cabecera {
+    /* background-color: yellow; */
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:flex-start;
+  }
+  .menu-1024{
+      /* background-color: red; */
+      width: auto;
+      display: none;
+      flex-direction: row;
+      align-items: center;
+      margin: 10px;
+  }
+    .menu-1024 a{
+      text-decoration: none;
+      color: black;
+      display: none;
+      flex-direction: row;
+      text-align: end;
+      margin-right: 30px;
+    }
+
+
+  .menu {
+    /* background-color: rgb(0, 0, 0); */ 
+    flex-wrap: wrap;
+  }
+  .imagen-menu {
+  background-color: transparent;
+  border: none;
+  padding: 1;
+  cursor: pointer;
+  margin-left: 15px;
+  }
+  
+
+  .imgTituloPag {
+    /* background-color: tomato; */
+    background-image: url(./tituloCafeWeb.png);
+    background-position: center;
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    width: 30%;
+    height: 8vh;
+    /* display: flex; */
+    /* align-items: center; */
+    /* text-align: center; */
+    margin-right: auto;
+    margin-left: 70px;
+    display: none;
+    
+  }
+
+  main {
+      
+    background-color: burlywood;
+    width: 100%;
+    height: 77vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    
+  }
+  .video-mobile {
+      position: relative;
+      width: 100%;
+      height: 25vh; /* Ajusta la altura según tus necesidades */
+      overflow: hidden;
+      z-index: 0;
+  }
+  .video-mobile video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  .video-mobile video.active {
+    opacity: 1;
+}
+.header-video.hidden {
+  display: none; /* Oculta los videos ocultos */
+}
+.header-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el tamaño de la video al contenedor manteniendo la relación de aspecto */
+}
+  
+  footer {
+    background-color: chartreuse;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+  .textoFooter{
+      background-color: black;
+      width:90vw;
+      height: 15vh;
+      display: flex;
+      margin: 50px;
+      
+  }
+  .textoCentroFooter{
+      background-color: cadetblue;
+      width: 15vw;
+      height: 8vh;
+      display: none;
+      margin:50px;
+      
+  }
+  .textoIzquierdaFooter{
+      background-color: lightsalmon;
+      width: 15vw;
+      height: 8vh;
+      display: none;
+      margin: 50px;
+
+  }
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 768px) {
+  header {
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 15vh;
+      display:flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-evenly;
+      margin: 0;
+      flex-direction: row;
+    }
+  
+    .cabecera {
+      /* background-color: yellow; */
+      width: 100%;
+      height: 12vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-around;
+    }
+    .menu-1024{
+        /* background-color: red; */
+        width: auto;
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px;
+    }
+      .menu-1024 a{
+        text-decoration: none;
+        color: black;
+        display: none;
+        flex-direction: row;
+        text-align: end;
+        margin-right: 30px;
+      }
+
+  
+      .menu {
+        /* background-color: rgb(0, 0, 0); */ 
+        flex-wrap: wrap;
+      }
+      .imagen-menu {
+      background-color: transparent;
+      border: none;
+      padding: 1;
+      cursor: pointer;
+      margin-left: 15px;
+      }
+    
+  
+      .imgTituloPag {
+        /* background-color: tomato; */
+        background-image: url(./tituloCafeWeb.png);
+        background-position: center;
+        background-size: contain; 
+        background-repeat: no-repeat; 
+        width: 30%;
+        height: 8vh;
+        /* display: flex; */
+        /* align-items: center; */
+        /* text-align: center; */
+        margin-right: auto;
+        margin-left: 70px;
+      }
+  
+    main {
+        
+      background-color: burlywood;
+      width: 100%;
+      height: 65vh;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: flex;
+      
+    }
+    .video-mobile {
+        position: relative;
+        width: 100%;
+        height: 20vh; /* Ajusta la altura según tus necesidades */
+        overflow: hidden;
+    }
+    
+    
+    footer {
+      background-color: chartreuse;
+      width: 100%;
+      height: 20vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+    }
+    .textoFooter{
+        background-color: black;
+        width: 15vw;
+        height: 8vh;
+        display: flex;
+        margin: 50px;
+        
+    }
+    .textoCentroFooter{
+        background-color: cadetblue;
+        width: 15vw;
+        height: 8vh;
+        display: flex;
+        margin:50px;
+        
+    }
+    .textoIzquierdaFooter{
+        background-color: lightsalmon;
+        width: 15vw;
+        height: 8vh;
+        display: flex;
+        margin: 50px;
+
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 768px){
+    header {
+        background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
+        width: 100%;
+      height: 15vh;
+      display:flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-evenly;
+      margin: 0;
+      flex-direction: row;
+    }
+  
+    .cabecera {
+      /* background-color: yellow; */
+      width: 100%;
+      height: 12vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-around;
+    }
+  .menu-1024{
+    /* background-color: red; */
+    width: auto;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+
+    
+  }
+  .menu-1024 a{
+    text-decoration: none;
+    color: black;
+    display: none;
+    flex-direction: row;
+    text-align: end;
+    margin-right: 30px;
+  }
+  
+  .menu {
+    /* background-color: rgb(0, 0, 0); */
+    width: 15vw;
+    height: 6vh;
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .imagen-menu {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  }
+  .video-mobile {
+    position: relative;
+    width: 100%;
+    height: 20vh; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño del video para cubrir completamente el contenedor */
+}
+.imgTituloPag {
+    /* background-color: tomato; */
+    background-image: url(./tituloCafeWeb.png);
+    background-position: center;
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    width: 30%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 180px;
+}
+  
+  main {
+    background-color: burlywood;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+  }
+  
+  footer {
+    background-color: chartreuse;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+ 
+.textoFooter{
+    background-color: black;
+    width: 15vw;
+    height: 8vh;
+    display: flex;
+    margin: 50px;
+    
+}
+.textoCentroFooter{
+    background-color: cadetblue;
+    width: 15vw;
+    height: 8vh;
+    display: flex;
+    margin:50px;
+    
+}
+.textoIzquierdaFooter{
+    background-color: lightsalmon;
+    width: 15vw;
+    height: 8vh;
+    display: flex;
+    margin: 50px;
+
+}
+}
+
+
+
+@media screen and (min-width: 1024px){
+    header {
+        background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
+        width: 100%;
+      height: 15vh;
+      display:flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-evenly;
+      margin: 0;
+      flex-direction: row;
+    }
+  
+    .cabecera {
+      /* background-color: yellow; */
+      width: 100%;
+      height: 12vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-around;
+    }
+  .imgTituloPag {
+    /* background-color: tomato; */
+    width: 25%;
+    height: 8vh;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .menu-1024{
+    /* background-color: red; */
+    width: auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px;
+
+    
+  }
+  .menu-1024 a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    flex-direction: row;
+    text-align: end;
+    margin-right: 30px;
+  }
+  
+  .menu {
+    background-color: violet;
+    width: 6vw;
+    height: 6vh;
+    display: none;
+    margin: 25px;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  main {
+    background-color: burlywood;
+    width: 100%;
+    height: 300vh;
+    display: flex;
+  }
+  .video-mobile{
+    background-color: green;
+    width:100%;
+    height: 80vh;
+    display: flex;
+    
+}
+  
+  footer {
+    background-color: chartreuse;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  .textoCentroFooter{
+    background-color: cadetblue;
+    width: 15vw;
+    height: 8vh;
+    display: flex;
+    margin:50px;
+    
+}
+.textoIzquierdaFooter{
+    background-color: lightsalmon;
+    width: 15vw;
+    height: 8vh;
+    display: flex;
+    margin: 50px;
+
+}
+}
