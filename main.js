@@ -26,12 +26,27 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(playNextVideo, 7000);
 
     // Código para el menú móvil
-    const menuIcon = document.getElementById('mobile-menu-Icon');
-    const submenu = document.getElementById('mobile-submenu');
+    const menuIcon = document.getElementById('toggleMenu');
+    const menuLateral = document.querySelector('.menu-lateral');
 
-    // Event listener para el botón del menú móvil
-    menuIcon.addEventListener('click', function() {
-        // Alternar la clase 'active' para mostrar u ocultar el submenú
-        submenu.classList.toggle('active');
+    // Event listener para el botón del menú desplegable
+    menuIcon.addEventListener('click', function(event) {
+        event.stopPropagation(); // Evitar que el clic se propague al contenedor padre
+
+        // Alternar la clase 'activo' para mostrar u ocultar el menú lateral
+        menuLateral.classList.toggle('activo');
+    });
+
+    // Event listener para ocultar el menú desplegable al hacer clic fuera de él
+    document.addEventListener('click', function() {
+        // Ocultar el menú desplegable si está abierto
+        if (menuLateral.classList.contains('activo')) {
+            menuLateral.classList.remove('activo');
+        }
+    });
+
+    // Event listener para evitar que el clic en el menú desplegable se propague al contenedor padre
+    menuLateral.addEventListener('click', function(event) {
+        event.stopPropagation();
     });
 });

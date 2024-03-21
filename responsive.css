@@ -1,95 +1,93 @@
 @media only screen and (max-width: 400px) {
+
+
+  
   header {
-    background-color:transparent;
+    background-color: transparent;
     width: 100%;
-    height: 15vh;
-    display:flex;
+    height: 25vh;
+    display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
     margin: 0;
     flex-direction: row;
-    position: absolute;
+    position: relative;
     z-index: 1;
-
+    overflow: hidden;
   }
 
   .cabecera {
-    /* background-color: yellow; */
     width: 100%;
     height: 12vh;
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content:flex-start;
+    justify-content: flex-start;
   }
-  .menu-1024{
-      /* background-color: red; */
-      width: auto;
-      display: none;
-      flex-direction: row;
-      align-items: center;
-      margin: 10px;
-  }
-    .menu-1024 a{
-      text-decoration: none;
-      color: black;
-      display: none;
-      flex-direction: row;
-      text-align: end;
-      margin-right: 30px;
-    }
 
+  .menu-1024 {
+    width: auto;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .menu-1024 a {
+    text-decoration: none;
+    color: black;
+    display: none;
+    flex-direction: row;
+    text-align: end;
+    margin-right: 30px;
+  }
 
   .menu {
-    /* background-color: rgb(0, 0, 0); */ 
     flex-wrap: wrap;
   }
+
   .imagen-menu {
-  background-color: transparent;
-  border: none;
-  padding: 1;
-  cursor: pointer;
-  margin-left: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 1;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 100px;
   }
-  
 
   .imgTituloPag {
-    /* background-color: tomato; */
     background-image: url(./tituloCafeWeb.png);
     background-position: center;
-    background-size: contain; 
-    background-repeat: no-repeat; 
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 30%;
     height: 8vh;
-    /* display: flex; */
-    /* align-items: center; */
-    /* text-align: center; */
     margin-right: auto;
     margin-left: 70px;
     display: none;
-    
   }
 
   main {
-      
     background-color: burlywood;
     width: 100%;
     height: 77vh;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
-    display: flex;
+    /* overflow: hidden; */
     
   }
+
   .video-mobile {
-      position: relative;
-      width: 100%;
-      height: 25vh; /* Ajusta la altura según tus necesidades */
-      overflow: hidden;
-      z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+    z-index: 0;
   }
-  .video-mobile video{
+
+  .video-mobile video {
     position: absolute;
     top: 0;
     left: 0;
@@ -98,21 +96,25 @@
     opacity: 0;
     transition: opacity 1s ease;
   }
+
   .video-mobile video.active {
     opacity: 1;
-}
-.header-video.hidden {
-  display: none; /* Oculta los videos ocultos */
-}
-.header-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ajusta el tamaño de la video al contenedor manteniendo la relación de aspecto */
-}
-  
+  }
+
+  .header-video.hidden {
+    display: none;
+  }
+
+  .header-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
   footer {
     background-color: chartreuse;
     width: 100%;
@@ -122,34 +124,391 @@
     flex-direction: row;
     align-items: center;
   }
-  .textoFooter{
-      background-color: black;
-      width:90vw;
-      height: 15vh;
-      display: flex;
-      margin: 50px;
-      
-  }
-  .textoCentroFooter{
-      background-color: cadetblue;
-      width: 15vw;
-      height: 8vh;
-      display: none;
-      margin:50px;
-      
-  }
-  .textoIzquierdaFooter{
-      background-color: lightsalmon;
-      width: 15vw;
-      height: 8vh;
-      display: none;
-      margin: 50px;
 
+  .textoFooter {
+    background-color: black;
+    width: 90vw;
+    height: 15vh;
+    display: flex;
+    margin: 50px;
   }
+
+  .textoCentroFooter {
+    background-color: cadetblue;
+    width: 15vw;
+    height: 8vh;
+    display: none;
+    margin: 50px;
+  }
+
+  .textoIzquierdaFooter {
+    background-color: lightsalmon;
+    width: 15vw;
+    height: 8vh;
+    display: none;
+    margin: 50px;
+  }
+  
 }
 
 
-@media only screen and (min-width: 401px) and (max-width: 768px) {
+
+
+
+@media only screen and (min-width: 401px) and (max-width: 767px) {
+  
+  
+  header {
+    background-color: transparent;
+    width: 101vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 0;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .cabecera {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+  }
+
+  .menu-1024 {
+    width: auto;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .menu-1024 a {
+    text-decoration: none;
+    color: black;
+    display: none;
+    flex-direction: row;
+    text-align: end;
+    margin-right: 30px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+  }
+
+  .imagen-menu {
+    background-color: transparent;
+    border: none;
+    padding: 5;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 100px;
+  }
+
+  .imgTituloPag {
+    background-image: url(./tituloCafeWeb.png);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 4vh;
+    margin-right: auto;
+    margin-left: 70px;
+    display: none;
+  }
+
+  main {
+    background-color: rgb(189, 184, 176);
+    width: 100%;
+    min-height: calc(100vh - 35vh); /* Calcula la altura mínima para que el footer no se solape con el contenido */
+    padding-bottom: 20vh; /* Ajusta el espacio para el footer */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Crea columnas automáticas con un ancho mínimo de 300px */
+    gap: 20px; /* Espacio entre las celdas del grid */
+    padding: 20px;
+    overflow: hidden; /* Evita que el contenido del main sobresalga del main en dispositivos con pantallas pequeñas */
+  }
+  .contenido, .informacion, .recetas {
+    background-color: #6e8885; /* Color de fondo para cada sección */
+    padding: 20px; /* Añade un relleno dentro de cada sección */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.boton-avanzado {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    padding: 15px 32px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    display: inline-block; /* Asegura que el botón se comporte como un elemento en línea */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 4px 2px; /* Margen */
+    transition-duration: 0.4s; /* Duración de la transición */
+    cursor: pointer; /* Cursor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.boton-avanzado:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el ratón por encima */
+    color: white; /* Cambia el color del texto al pasar el ratón por encima */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Cambia la sombra al pasar el ratón por encima */
+}
+
+  .video-mobile {
+    position: absolute;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .video-mobile video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  .video-mobile video.active {
+    opacity: 1;
+  }
+
+  .header-video.hidden {
+    display: none;
+  }
+
+  .header-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  footer {
+    background-color: rgb(187, 188, 185);
+    width: 102vw;; /* Ancho del footer al 100% del viewport */
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+  .textoFooter {
+    background-color: black;
+    width: 90vw;
+    height: 15vh;
+    display: flex;
+    margin: 50px;
+  }
+
+  .textoCentroFooter {
+    background-color: cadetblue;
+    width: 15vw;
+    height: 8vh;
+    display: none;
+    margin: 50px;
+  }
+
+  .textoIzquierdaFooter {
+    background-color: lightsalmon;
+    width: 15vw;
+    height: 8vh;
+    display: none;
+    margin: 50px;
+  }
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 767px){
+   
+  
+  header {
+    background-color: transparent;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 0;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .cabecera {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+  }
+
+  .menu-1024 {
+    width: auto;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .menu-1024 a {
+    text-decoration: none;
+    color: black;
+    display: none;
+    flex-direction: row;
+    text-align: end;
+    margin-right: 30px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+  }
+
+  .imagen-menu {
+    background-color: transparent;
+    border: none;
+    padding: 1;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 100px;
+  }
+
+  .imgTituloPag {
+    background-image: url(./tituloCafeWeb.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 8vh;
+    margin-right: auto;
+    margin-left: 70px;
+    display: none;
+  }
+
+  main {
+    background-color: burlywood;
+    width: 100%;
+    height: 77vh;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+    
+  }
+
+  .video-mobile {
+    position: absolute;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .video-mobile video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  .video-mobile video.active {
+    opacity: 1;
+  }
+
+  .header-video.hidden {
+    display: none;
+  }
+
+  .header-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  footer {
+    background-color: chartreuse;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .textoFooter {
+    background-color: black;
+    width: 90vw;
+    height: 15vh;
+    display: flex;
+    margin: 50px;
+  }
+
+  .textoCentroFooter {
+    background-color: cadetblue;
+    width: 15vw;
+    height: 8vh;
+    display: none;
+    margin: 50px;
+  }
+
+  .textoIzquierdaFooter {
+    background-color: lightsalmon;
+    width: 15vw;
+    height: 8vh;
+    display: none;
+    margin: 50px;
+  }
+  
+}
+
+
+
+
+
+
+@media screen and (min-width: 1024px){
   header {
     background-color:transparent;
     width: 100%;
@@ -172,306 +531,17 @@
       display: flex;
       align-items: center;
       text-align: center;
-      justify-content: flex-start;
-    }
-    .menu-1024{
-        /* background-color: red; */
-        width: auto;
-        display: none;
-        flex-direction: row;
-        align-items: center;
-        margin: 10px;
-    }
-      .menu-1024 a{
-        text-decoration: none;
-        color: black;
-        display: none;
-        flex-direction: row;
-        text-align: end;
-        margin-right: 30px;
-      }
-
-  
-      .menu {
-        /* background-color: rgb(0, 0, 0); */ 
-        flex-wrap: wrap;
-      }
-      .imagen-menu {
-      background-color: transparent;
-      border: none;
-      padding: 1;
-      cursor: pointer;
-      margin-left: 15px;
-      }
-    
-  
-      .imgTituloPag {
-        /* background-color: tomato; */
-        background-image: url(./tituloCafeWeb.png);
-        background-position: center;
-        background-size: contain; 
-        background-repeat: no-repeat; 
-        width: 30%;
-        height: 8vh;
-        /* display: flex; */
-        /* align-items: center; */
-        /* text-align: center; */
-        margin-right: auto;
-        margin-left: 70px;
-        display: none;
-      }
-  
-    main {
-        
-      background-color: burlywood;
-      width: 100%;
-      height: 80vh;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      display: flex;
-      
-    }
-    .video-mobile {
-      position: relative;
-      width: 100%;
-      height: 50vh; /* Ajusta la altura según tus necesidades */
-      overflow: hidden;
-      z-index: 0;
-      
-  }
-  .video-mobile video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0;
-    transition: opacity 1s ease;
-
-  }
-  .video-mobile video.active {
-    opacity: 1;
-}
-.header-video.hidden {
-  display: none; /* Oculta los videos ocultos */
-}
-.header-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ajusta el tamaño de la video al contenedor manteniendo la relación de aspecto */
-}
-    
-    
-    footer {
-      background-color: chartreuse;
-      width: 100%;
-      height: 20vh;
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      align-items: center;
-    }
-    .textoFooter{
-      background-color: black;
-      width:90vw;
-      height: 15vh;
-      display: flex;
-      margin: 50px;
-      
-  }
-  .textoCentroFooter{
-      background-color: cadetblue;
-      width: 15vw;
-      height: 8vh;
-      display: none;
-      margin:50px;
-      
-  }
-  .textoIzquierdaFooter{
-      background-color: lightsalmon;
-      width: 15vw;
-      height: 8vh;
-      display: none;
-      margin: 50px;
-
-  }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-  @media screen and (min-width: 768px){
-    header {
-        background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
-        width: 100%;
-      height: 15vh;
-      display:flex;
-      align-items: center;
-      text-align: center;
-      justify-content: space-evenly;
-      margin: 0;
-      flex-direction: row;
-    }
-  
-    .cabecera {
-      /* background-color: yellow; */
-      width: 100%;
-      height: 12vh;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      justify-content: space-around;
-    }
-  .menu-1024{
-    /* background-color: red; */
-    width: auto;
-    display: none;
-    flex-direction: row;
-    align-items: center;
-    margin: 10px;
-
-    
-  }
-  .menu-1024 a{
-    text-decoration: none;
-    color: black;
-    display: none;
-    flex-direction: row;
-    text-align: end;
-    margin-right: 30px;
-  }
-  
-  .menu {
-    /* background-color: rgb(0, 0, 0); */
-    width: 15vw;
-    height: 6vh;
-    display: flex;
-    margin: 0;
-    flex-wrap: wrap;
-  }
-  .imagen-menu {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  }
-  .video-mobile {
-    position: relative;
-    width: 100%;
-    height: 20vh; /* Ajusta la altura según tus necesidades */
-    overflow: hidden;
-}
-
-.video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta el tamaño del video para cubrir completamente el contenedor */
-}
-.imgTituloPag {
-    /* background-color: tomato; */
-    background-image: url(./tituloCafeWeb.png);
-    background-position: center;
-    background-size: contain; 
-    background-repeat: no-repeat; 
-    width: 30%;
-    height: 8vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-right: 180px;
-}
-  
-  main {
-    background-color: burlywood;
-    width: 100%;
-    height: 60vh;
-    display: flex;
-  }
-  
-  footer {
-    background-color: chartreuse;
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-  }
- 
-.textoFooter{
-    background-color: black;
-    width: 15vw;
-    height: 8vh;
-    display: flex;
-    margin: 50px;
-    
-}
-.textoCentroFooter{
-    background-color: cadetblue;
-    width: 15vw;
-    height: 8vh;
-    display: flex;
-    margin:50px;
-    
-}
-.textoIzquierdaFooter{
-    background-color: lightsalmon;
-    width: 15vw;
-    height: 8vh;
-    display: flex;
-    margin: 50px;
-
-}
-}
-
-
-
-@media screen and (min-width: 1024px){
-    header {
-        background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
-        width: 100%;
-      height: 15vh;
-      display:flex;
-      align-items: center;
-      text-align: center;
-      justify-content: space-evenly;
-      margin: 0;
-      flex-direction: row;
-    }
-  
-    .cabecera {
-      /* background-color: yellow; */
-      width: 100%;
-      height: 12vh;
-      display: flex;
-      align-items: center;
-      text-align: center;
       justify-content: space-around;
     }
   .imgTituloPag {
     /* background-color: tomato; */
-    width: 25%;
-    height: 8vh;
-    margin: 5px;
+    /* width: 25%; */
+    /* height: 8vh; */
+    /* margin: 5px; */
     display: flex;
-    align-items: center;
-    text-align: center;
+    margin-left: 600px;
+    /* align-items: center; */
+    /* text-align: center; */
   }
   .menu-1024{
     /* background-color: red; */
@@ -485,11 +555,12 @@
   }
   .menu-1024 a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     display: inline-block;
     flex-direction: row;
     text-align: end;
     margin-right: 30px;
+    font-weight: bold;
   }
   
   .menu {
@@ -540,4 +611,5 @@
     margin: 50px;
 
 }
+
 }
