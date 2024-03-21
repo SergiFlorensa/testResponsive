@@ -335,6 +335,11 @@
     display: none;
     margin: 50px;
   }
+  header, main, footer {
+    width: 100%;
+    box-sizing: border-box; /* Para que el ancho incluya el padding y el borde */
+    padding: 10px; 
+  }
   
   
 }
