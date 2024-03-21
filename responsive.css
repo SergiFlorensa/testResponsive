@@ -235,9 +235,10 @@
     .video-mobile {
       position: relative;
       width: 100%;
-      height: 25vh; /* Ajusta la altura según tus necesidades */
+      height: 50vh; /* Ajusta la altura según tus necesidades */
       overflow: hidden;
       z-index: 0;
+      
   }
   .video-mobile video{
     position: absolute;
@@ -247,6 +248,7 @@
     height: auto;
     opacity: 0;
     transition: opacity 1s ease;
+
   }
   .video-mobile video.active {
     opacity: 1;
