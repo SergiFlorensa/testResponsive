@@ -151,16 +151,19 @@
 
 @media only screen and (min-width: 401px) and (max-width: 768px) {
   header {
-      background-color: rgba(0, 0, 0, 0.5);
-      width: 100%;
-      height: 15vh;
-      display:flex;
-      align-items: center;
-      text-align: center;
-      justify-content: space-evenly;
-      margin: 0;
-      flex-direction: row;
-    }
+    background-color:transparent;
+    width: 100%;
+    height: 15vh;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 0;
+    flex-direction: row;
+    position: absolute;
+    z-index: 1;
+
+  }
   
     .cabecera {
       /* background-color: yellow; */
@@ -169,7 +172,7 @@
       display: flex;
       align-items: center;
       text-align: center;
-      justify-content: space-around;
+      justify-content: flex-start;
     }
     .menu-1024{
         /* background-color: red; */
@@ -215,13 +218,14 @@
         /* text-align: center; */
         margin-right: auto;
         margin-left: 70px;
+        display: none;
       }
   
     main {
         
       background-color: burlywood;
       width: 100%;
-      height: 65vh;
+      height: 80vh;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -229,11 +233,35 @@
       
     }
     .video-mobile {
-        position: relative;
-        width: 100%;
-        height: 20vh; /* Ajusta la altura según tus necesidades */
-        overflow: hidden;
-    }
+      position: relative;
+      width: 100%;
+      height: 25vh; /* Ajusta la altura según tus necesidades */
+      overflow: hidden;
+      z-index: 0;
+  }
+  .video-mobile video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  .video-mobile video.active {
+    opacity: 1;
+}
+.header-video.hidden {
+  display: none; /* Oculta los videos ocultos */
+}
+.header-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el tamaño de la video al contenedor manteniendo la relación de aspecto */
+}
     
     
     footer {
@@ -246,29 +274,29 @@
       align-items: center;
     }
     .textoFooter{
-        background-color: black;
-        width: 15vw;
-        height: 8vh;
-        display: flex;
-        margin: 50px;
-        
-    }
-    .textoCentroFooter{
-        background-color: cadetblue;
-        width: 15vw;
-        height: 8vh;
-        display: flex;
-        margin:50px;
-        
-    }
-    .textoIzquierdaFooter{
-        background-color: lightsalmon;
-        width: 15vw;
-        height: 8vh;
-        display: flex;
-        margin: 50px;
+      background-color: black;
+      width:90vw;
+      height: 15vh;
+      display: flex;
+      margin: 50px;
+      
+  }
+  .textoCentroFooter{
+      background-color: cadetblue;
+      width: 15vw;
+      height: 8vh;
+      display: none;
+      margin:50px;
+      
+  }
+  .textoIzquierdaFooter{
+      background-color: lightsalmon;
+      width: 15vw;
+      height: 8vh;
+      display: none;
+      margin: 50px;
 
-    }
+  }
   }
 
 
