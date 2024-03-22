@@ -282,7 +282,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 50%; /* Ancho del menú */
+  width: 100%; /* Ancho del menú */
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8); /* Negro oscuro transparente */
   padding: 20px;
@@ -290,7 +290,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   list-style: none;
   margin: 0;
   transition: transform 0.3s ease;
@@ -298,7 +298,8 @@
   z-index: 9999; /* Asegura que el menú esté en la parte superior */
   overflow-y: auto;
   flex-wrap: nowrap;
-  padding: 0;
+  padding: 1;
+  text-align: center;
 
 
 }
@@ -359,7 +360,7 @@
   align-items: center;
   text-align: center;
   padding-left: 10px;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
   main {
