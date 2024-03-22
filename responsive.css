@@ -282,7 +282,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw; /* Ancho del menú */
+  width: 100%; /* Ancho del menú */
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8); /* Negro oscuro transparente */
   padding: 20px;
@@ -295,8 +295,8 @@
   margin: 0;
   transition: transform 0.3s ease;
   transform: translateX(-100%); /* Ocultar el menú fuera de la pantalla */
-  z-index: 999; /* Asegura que el menú esté en la parte superior */
-  overflow-y: auto;
+  z-index: 9999; /* Asegura que el menú esté en la parte superior */
+  overflow-y: hidden;
   flex-wrap: nowrap;
   padding: 1;
   text-align: center;
@@ -373,6 +373,8 @@
     gap: 20px; /* Espacio entre las celdas del grid */
     padding: 20px;
     overflow: hidden; /* Evita que el contenido del main sobresalga del main en dispositivos con pantallas pequeñas */
+    position: relative;
+    z-index: 0;
   }
   .contenido, .informacion, .recetas {
     background-color: #6e8885; /* Color de fondo para cada sección */
@@ -449,6 +451,7 @@
     position: relative;
     bottom: 0;
     left: 0;
+    z-index: 0;
 }
 
   .textoFooter {
