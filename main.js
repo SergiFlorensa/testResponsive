@@ -39,6 +39,16 @@ document.addEventListener("DOMContentLoaded", function() {
         submenu.classList.remove("nav-menu_visible");
         submenuBg.style.display = 'none';
         navToggle.setAttribute("aria-label", "abrir menú");
-    });
+        
     });
 
+    const botonAvanzado = document.querySelector(".boton-avanzado");
+
+    botonAvanzado.addEventListener("click", function() {
+        // Desplazar suavemente al principio de la página
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});

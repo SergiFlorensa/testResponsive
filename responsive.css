@@ -383,9 +383,9 @@
 }
 
 .boton-avanzado {
-    background-color: #4CAF50; /* Color de fondo */
+    background-color: #d4c764; /* Color de fondo */
     border: none; /* Sin borde */
-    color: white; /* Color del texto */
+    color: rgb(0, 0, 0); /* Color del texto */
     padding: 15px 32px; /* Espaciado interno */
     text-align: center; /* Alineación del texto */
     text-decoration: none; /* Sin decoración de texto */
@@ -399,7 +399,7 @@
 }
 
 .boton-avanzado:hover {
-    background-color: #45a049; /* Cambia el color de fondo al pasar el ratón por encima */
+    background-color: #d4c764; /* Cambia el color de fondo al pasar el ratón por encima */
     color: white; /* Cambia el color del texto al pasar el ratón por encima */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Cambia la sombra al pasar el ratón por encima */
 }
@@ -410,6 +410,7 @@
     height: 25vh;
     overflow: hidden;
     z-index: 0;
+    
   }
 
   .video-mobile video {
@@ -438,7 +439,9 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    
   }
+ 
 
   footer {
     background-color: rgb(187, 188, 185);
