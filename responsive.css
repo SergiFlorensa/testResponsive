@@ -282,8 +282,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Ancho del menú */
-  height: 100%;
+  width: 100vw; /* Ancho del menú */
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.8); /* Negro oscuro transparente */
   padding: 20px;
   box-sizing: border-box;
@@ -295,7 +295,7 @@
   margin: 0;
   transition: transform 0.3s ease;
   transform: translateX(-100%); /* Ocultar el menú fuera de la pantalla */
-  z-index: 9999; /* Asegura que el menú esté en la parte superior */
+  z-index: 999; /* Asegura que el menú esté en la parte superior */
   overflow-y: auto;
   flex-wrap: nowrap;
   padding: 1;
