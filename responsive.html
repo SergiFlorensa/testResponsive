@@ -30,15 +30,15 @@
 
     <div class="cabecera">
         <div class="menu-1024">
-            <a href="menu1">aaaaaaa</a>
-            <a href="menu2">aaaaaaa</a>
-            <a href="menu3">aaaaaaa</a>
-            <a href="menu4">aaaaaaa</a>
-            <a href="menu5">aaaaaaa</a>
-            <a href="menu6">aaaaaaa</a>
+            <a href="menu1">Inicio</a>
+            <a href="menu2">Historia del Café</a>
+            <a href="menu3">Tipos de Café</a>
+            <a href="menu4">Cafeterías Destacadas</a>
+            <a href="menu5">Noticias y Eventos</a>
+            <a href="menu6">Recetas de Café</a>
         </div>
-        <div class="menu">
-            <button id="toggleMenu" class="imagen-menu">
+        <nav class="menu">
+            <button id="toggleMenu" class="imagen-menu" aria-label="abrir menú">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="50" viewBox="0,0,256,256" style="fill:#000000;">
                     <g fill="#ffffff" fill-rule="nonzero">
                         <g transform="scale(5.12,5.12)">
@@ -47,17 +47,40 @@
                     </g>
                 </svg>
             </button>
-            <div class="submenu" style="display: none;">
-                <h3>Menú de café</h3>
-                <ul>
-                    <li><a href="#">Café Arábica</a></li>
-                    <li><a href="#">Café Robusta</a></li>
-                    <li><a href="#">Café Liberica</a></li>
-                    <li><a href="#">Café Excelsa</a></li>
-                    <li><a href="#">Otros cafés</a></li>
-                </ul>
-            </div>
-        </div>
+            <ul class="nav-menu">
+                <li class="nav-menu-header">
+                    <button id="closeMenu" class="close-menu" aria-label="cerrar menú">X</button>
+                    <h2 class="menu-title">Explorar</h2>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link">Cafés del Mundo</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link">Cultura Cafetera</a>
+                </li>
+                <li class="nav-menu-header">
+                    <h2 class="menu-title">Descubrir</h2>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link">Técnicas de Tueste</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link">Variedades de Granos</a>
+                </li>
+                <li class="nav-menu-header">
+                    <h2 class="menu-title">Aprender</h2>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link">Preparación del Café</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link">Historia del Café</a>
+                </li>
+            </ul>
+            
+        </nav>
+        <div class="submenu-bg"></div>
+        
         
         <div class="imgTituloPag"></div>
     </div>
